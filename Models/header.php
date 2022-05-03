@@ -23,9 +23,6 @@
         <li class="nav-item">
           <a class="nav-link" href="add.php">Cadastrar notícia</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.php">Pricing</a>
-        </li>
       </ul>
     </div>
   </div>
