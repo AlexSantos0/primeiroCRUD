@@ -9,7 +9,7 @@ session_start();
         $titulo = $_POST['titulo'];
         $noticia = $_POST['noticia'];
 
-        $sql = "INSERT INTO noticia (nome, categoria) VALUES ('$titulo', '$noticia')";
+        $sql = "INSERT INTO noticia (titulo, noticia) VALUES ('$titulo', '$noticia')";
 
         if(mysqli_query($conn, $sql)){
             $_SESSION['mensagem'] = "<p class='alert alert-success'>Cadastrado com sucesso!";
