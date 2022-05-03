@@ -3,6 +3,8 @@
 require_once 'db/DB_conection.php';
 //HEADER
 require_once 'Models/header.php';
+//MENSAGEM
+require_once 'Models/mensagem.php';
 ?>
 
 <div class="container">

@@ -8,11 +8,11 @@ require_once 'Models/header.php';
     <form action="db/create.php" method="post">
         <div class="mb-3">
             <label for="titulo" class="form-label">Titulo da notícia</label>
-            <input type="text" name="titulo" class="form-control" placeholder="Digite o titulo da notícia">
+            <input type="text" name="titulo" class="form-control" placeholder="Digite o titulo da notícia" require>
         </div>
         <div class="mb-3">
             <label for="noticia" class="form-label">Descrição</label>
-            <textarea name="noticia" class="form-control" rows="5" placeholder="Digite sua notícia"></textarea>
+            <textarea name="noticia" class="form-control" rows="5" placeholder="Digite sua notícia" require></textarea>
         </div>
 
         <button type="submit" name="btn-cadastrar" class="btn btn-success">Cadastrar</button>

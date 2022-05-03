@@ -1,4 +1,8 @@
 <?php
+//SESSÃO
+session_start();
+
+//CONEXÃO
     require_once 'DB_conection.php';
 
     if(isset($_POST['btn-cadastrar'])){
@@ -8,9 +12,11 @@
         $sql = "INSERT INTO noticia (nome, categoria) VALUES ('$titulo', '$noticia')";
 
         if(mysqli_query($conn, $sql)){
-            header('Location: ../index.php?sucesso');
+            $_SESSION['mensagem'] = "<p class='alert alert-success'>Cadastrado com sucesso!";
+            header('Location: ../index.php');
         }else{
-            header('Location: .../index.php?erro');
+            $_SESSION['mensagem'] = "Erro ao cadastrar!";
+            header('Location: .../index.php');
         }
     }
 
