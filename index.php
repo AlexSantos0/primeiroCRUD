@@ -7,6 +7,7 @@ require_once 'Apps/Models/header.php';
    <div class="alert alert-primary" role="alert">
   Nenhuma noticia encontrada!
 </div>
+<a href="Apps/Controller/add.php"><button type="button" class="btn btn-success">Cadastrar</button></a>
    </div>
 <?php
 //FOOTER
